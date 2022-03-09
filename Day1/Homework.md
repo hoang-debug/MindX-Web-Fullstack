@@ -27,7 +27,7 @@ console.log(apples)
 
 Biến apples sử dụng Spread Operator để clone biến macbooks. Array của biến macbook có type lần lượt là [value, reference, value] => Array của apples cũng tương tự. Sau khi clone thì tại apples[1] giá trị ở đó là tham chiếu địa chỉ ô nhớ của Object trong biến macbooks. Nên khi modify giá trị của Object trong apples là ta đang modify của cả giá trị của Object trong biến apples. Còn apples[0] là ta modify  tham trị nên ko ảnh hưởng đến mảng cũ.
 
-##Ex3
+## Ex3
 --------------
 Kết quả in ra là undefined. Lý do là hoisting. Đoạn code có thể được triển khai rõ ràng hơn như sau:
 ```
@@ -40,7 +40,7 @@ function show() {
 ```
 Biến text bên ngoài hàm show() là biến global, có scope được ưu tiên sau biến text nằm trong hàm. Còn xét trong hàm show(), hoisting nên var text có giá trị khởi tạo là undefined => console.log(text) = undefined.
 
-##Ex5
+## Ex5
 
 ---------
 >*Kết quả là:*
@@ -61,7 +61,7 @@ Hàm Counter() được thực thi với toán tử new và gán cho biến coun
 
 Do giá trị được return trở lại biến counter nên sau counter.up() lần thứ 1 thì count = 1, value count lưu lại trong counter. Sau khi counter.up() lần thứ 2 thì count = 2.  Sau khi counter.down() thì count = 1.
 
-##Ex6
+## Ex6
 --------------
 >*Kết quả là:*
 ```
